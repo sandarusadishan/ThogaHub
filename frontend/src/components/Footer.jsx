@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => (
-  <footer className="w-full bg-black py-12 border-t border-gray-800 animate-slide-in-up">
+  <footer className="relative z-10 w-full bg-black py-10 border-t border-gray-800">
     <div className="container mx-auto px-6">
       <div className="flex flex-col md:flex-row justify-between items-center md:items-start text-white space-y-8 md:space-y-0">
         
