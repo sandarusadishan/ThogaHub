@@ -85,8 +85,6 @@ const LoginPage = () => {
     }
   };
 
-  // Added function to toggle password visibility
-  // password eka show/hide karanna me function eka use karanawa.
   const togglePasswordVisibility = () => {
     setIsPasswordVisible(!isPasswordVisible);
   };
@@ -116,8 +114,7 @@ const LoginPage = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          {/* Changed the second Input to handle password visibility */}
-          {/* Input component ekata props widihata type eka danna, password eka show/hide karana icon eka labadima. */}
+      
           <div className="relative">
             <Input
               type={isPasswordVisible ? "text" : "password"}
