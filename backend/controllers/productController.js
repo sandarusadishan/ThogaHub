@@ -1,11 +1,8 @@
 
 import Product from '../models/Product.js';
 
-// @desc    Create a new product post
-// @route   POST /api/products
-// @access  Private (Sellers only)
 export const createProduct = async (req, res) => {
-    // Check if the user is a seller based on the authenticated user's role
+    
     if (req.user.user.role !== 'seller') {
         return res.status(403).json({ msg: 'Access denied' });
     }

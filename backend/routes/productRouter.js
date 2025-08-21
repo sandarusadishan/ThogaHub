@@ -44,7 +44,7 @@ router.post('/', authenticate, async (req, res) => {
             description,
             quantity,
             price,
-            image, // Save the image URL
+            image, 
             seller: req.user.user.id,
         });
         await newProduct.save();
